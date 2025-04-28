@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function page() {
   return (
-    <div className=''>
+    <div className='bg-white text-black'>
       <TopHero name={'About'} img={'/about/hero.jpg'}/>
 
       <div className='flex flex-col container mx-auto h-[70vh] text-center py-20 gap-5'>

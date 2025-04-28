@@ -4,7 +4,7 @@ import React from 'react'
 
 const Card = ({ img, name, text }) => {
   return (
-    <div className='border border-green-400 p-5 flex flex-col items-center justify-around'>
+    <div className='border border-green-400 p-5 flex flex-col items-center justify-around '>
       <Image src={img} alt={name} width={200} height={200} />
       <h1 className='text-green-400 py-4 text-2xl'>{name}</h1>
       {text && <p className='text-xl'>{text}</p>}
@@ -14,9 +14,9 @@ const Card = ({ img, name, text }) => {
 
 export default function page() {
   return (
-    <div>
+    <div className='bg-white text-black'>
       <TopHero name={'Services'} img={'/services/hero.jpg'} />
-      <div className='flex flex-col container mx-auto text-center py-20 gap-5'>
+      <div className='flex flex-col container mx-auto text-center py-20 gap-5 bg-white text-black'>
         <p className='text-xl text-green-400'>All Services</p>
         <h1 className='text-4xl font-bold pb-20'>Our Services</h1>
 
