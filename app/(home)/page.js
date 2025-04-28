@@ -7,12 +7,12 @@ import FAQ from "./FAQ";
 
 export default function Home() {
   return (
-  <>
+  <div className="bg-white">
   <Hero/>
   <ServiceSection/>
   <Happiness/>
   <WhyChoose/>
   <FAQ/>
-  </>
+  </div>
   );
 }
