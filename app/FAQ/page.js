@@ -52,7 +52,7 @@ export default function FAQ() {
     <>
     
      <TopHero img={'/services/hero.jpg'} name={'Frequently Asked Questions'} />
-    <div className="container mx-auto w-[80%] py-20 flex flex-col gap-8">
+    <div className="container mx-auto w-[80%] py-20 flex flex-col gap-8 bg-white text-black">
      
 
       <div className="flex flex-col gap-4">

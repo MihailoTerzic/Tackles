@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function page() {
   return (
-    <div className=''>
+    <div className='bg-white text-black'>
       <TopHero img={'/services/hero.jpg'} name={'Privacy Policy'} />
       <div className='py-20 w-[80%] mx-auto'>
 

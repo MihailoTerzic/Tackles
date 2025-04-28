@@ -87,7 +87,7 @@ export default function TestimonialCard() {
         <>
           <TopHero img={'/services/hero.jpg'} name={'Testimonials'} />
     
-          <div className="container mx-auto py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="container mx-auto py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 bg-white text-black">
             {members.map((member, index) => (
               <div key={index} className="max-w-md w-full bg-white border border-green-400 rounded-lg p-6 shadow-md">
                 {/* Top Section: Name + Role + Image */}
