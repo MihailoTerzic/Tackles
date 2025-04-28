@@ -57,13 +57,13 @@ export default function Team() {
   return (
     <>
      <TopHero img={'/team/hero.jpg'} name={'Our Team'} />
-    <section className="w-[90%] mx-auto py-12 bg-white text-black">
+    <section className="w-[80%] mx-auto py-12 bg-white text-black">
       <h1 className="text-2xl font-bold text-center mb-8">Our Team</h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {teamMembers.map((member, index) => (
-          <div key={index} className="border border-green-400 rounded-lg p-4 flex flex-col items-center text-center">
-            <img src={member.img} alt={member.name} className="w-24 h-24 rounded-full object-cover mb-4" />
+          <div key={index} className="border border-green-400 rounded-2xl p-4 flex flex-col items-center text-center">
+            <Image src={member.img} alt={member.name} width={200} height={200} className=" rounded-full object-cover mb-4" />
             <h2 className="font-bold">{member.name}</h2>
             <p className="text-sm text-gray-500 mb-4">{member.role}</p>
 

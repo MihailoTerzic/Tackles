@@ -26,7 +26,8 @@ export default function Footer({ image }) {
           <p className="text-lg">Don't Know What To Start With?</p>
           <h2 className="text-4xl font-bold leading-tight">Get A Solutions For All <br /> Handyman Services</h2>
           <button className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold flex items-center gap-2 text-lg">
-            📞 Reach Us
+            <Image src={'/reach.png'} alt='reach btn' width={20} height={20}/>
+             Reach Us
           </button>
         </div>
 

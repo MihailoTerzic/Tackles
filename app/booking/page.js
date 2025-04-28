@@ -6,7 +6,7 @@ import React from 'react'
 export default function BookAppointment() {
   return ( <>
   
-    <TopHero img={'/services/hero.jpg'} name={'Terms & Conditions'} />
+    <TopHero img={'/services/hero.jpg'} name={'Book An Appointment'} />
    <div className="min-h-screen flex items-center justify-center bg-gray-50 py-10 px-4">
       <div className="w-full max-w-4xl bg-white p-8 rounded-lg shadow-md">
         <h2 className="text-2xl font-bold mb-8 text-center">Book An Appointment</h2>
