@@ -15,7 +15,7 @@ export default function WhyChoose() {
   return (
     <>
       {/* Why Choose Section */}
-      <div className='flex flex-col justify-center gap-8 items-center py-20 pt-25 container mx-auto text-center px-4'>
+      <div className='flex flex-col justify-center gap-8 items-center py-20 pt-25 container mx-auto text-center px-4 bg-white'>
         <h1 className='text-5xl font-bold'><span className='text-green-400'>Why Choose</span> Tackles</h1>
         <p className='text-xl max-w-3xl'>
           With so many painting contractors to choose from, why would you choose us? First, if you ever worked with us before, you know why — but for those who have not, allow us to explain.
