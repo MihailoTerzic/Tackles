@@ -9,7 +9,7 @@ export default function Home() {
   return (
   <>
   <Hero/>
-  <div className="bg-white">
+  <div className="bg-white text-black">
 
   <ServiceSection/>
   <Happiness/>
