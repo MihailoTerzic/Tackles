@@ -36,10 +36,10 @@ export default function WhyChoose() {
         </p>
 
         <div className='flex flex-wrap justify-center gap-6'>
-          <Card img='/checkmark.png' text='Drop an inquiry' />
-          <Card img='/fa-solid_pencil-ruler.png' text='Inspection & Quotation' />
-          <Card img='/mdi_like.png' text='Scope Matrix & Timeline' />
-          <Card img='/handshake.png' text='Handover Work To Client' />
+          <Card img='/homepage/checkmark.png' text='Drop an inquiry' />
+          <Card img='/homepage/fa-solid_pencil-ruler.png' text='Inspection & Quotation' />
+          <Card img='/homepage/mdi_like.png' text='Scope Matrix & Timeline' />
+          <Card img='/homepage/handshake.png' text='Handover Work To Client' />
         </div>
       </div>
     </>
