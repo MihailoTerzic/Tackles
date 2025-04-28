@@ -9,7 +9,7 @@ export default function TopHero({img,name}) {
     <div className="w-full px-20 mx-auto  text-white pb-20 bg-gradient-to-t from-black/60 to-transparent">
       <h1 className="text-6xl font-bold">{name}</h1>
       <div className="text-sm mt-2 text-end">
-        <a href="/" className="underline">Home</a> <span className="mx-2">/</span> {name}
+        <a href="/" className="">Home</a> <span className="mx-2">/</span> {name}
       </div>
     </div>
 

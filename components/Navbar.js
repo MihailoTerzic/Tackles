@@ -20,7 +20,9 @@ export default function Navbar() {
     ? ' text-white bg-transparent'
     : 'bg-white text-black shadow-md'
 
-  const linkClasses = isTop ? 'hover:font-bold text-white' : 'hover:font-bold text-black'
+    const linkClasses = `transition-all duration-300 ${
+      isTop ? 'text-white' : 'text-black'
+    } hover:font-bold`
 
   return (
     <nav
