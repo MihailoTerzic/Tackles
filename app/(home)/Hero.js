@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section className="relative w-full h-screen overflow-hidden">
       {/* Background image with dark overlay */}
-      <div className="absolute inset-0 -z-10">
+      <div className="absolute inset-0 ">
         <Image
           src={'/homepage/hero.png'}
           alt="Hero background"
