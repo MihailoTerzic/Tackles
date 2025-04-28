@@ -9,54 +9,54 @@ const teamMembers = [
   {
     name: 'RAJU KHATRI',
     role: 'Founder',
-    img: '/team1.jpg',
+    img: '/team/team1.png',
   },
   {
     name: 'Pritambar Ghimire',
     role: 'Electrician',
-    img: '/team2.jpg',
+    img: '/team/team2.png',
   },
   {
     name: 'Gopak sinjali magar',
     role: 'Senior Electrician',
-    img: '/team3.jpg',
+    img: '/team/team3.png',
   },
   {
     name: 'Dharma Thapa',
     role: 'Mason',
-    img: '/team4.jpg',
+    img: '/team/team4.png',
   },
   {
     name: 'Rajendra',
     role: 'Tile/Mason',
-    img: '/team5.jpg',
+    img: '/team/team5.png',
   },
   {
     name: 'Tom Lal Pamdey',
     role: 'Site Incharge',
-    img: '/team6.jpg',
+    img: '/team/team6.png',
   },
   {
     name: 'Bishnu Pandey',
     role: 'Spray Painter',
-    img: '/team7.jpg',
+    img: '/team/team7.png',
   },
   {
     name: 'Quiyman',
     role: 'Supervisor',
-    img: '/team8.jpg',
+    img: '/team/team8.png',
   },
   {
     name: 'Sunil Kumar',
     role: 'Tile Mason',
-    img: '/team9.jpg',
+    img: '/team/team9.png',
   },
 ]
 
 export default function Team() {
   return (
     <>
-     <TopHero img={'/services/hero.jpg'} name={'Our Team'} />
+     <TopHero img={'/team/hero.jpg'} name={'Our Team'} />
     <section className="w-[90%] mx-auto py-12 bg-white text-black">
       <h1 className="text-2xl font-bold text-center mb-8">Our Team</h1>
 
@@ -69,13 +69,13 @@ export default function Team() {
 
             <div className="flex space-x-4">
               <a href="#" className="text-gray-600 hover:text-green-500">
-                <Image src={'/socials/facebook.png'} width={30} height={30}/>
+                <Image src={'/socials/facebook.png'} width={30} height={30} alt={'socials'}/>
               </a>
               <a href="#" className="text-gray-600 hover:text-green-500">
-              <Image src={'/socials/watsupp.png'} width={30} height={30}/>
+              <Image src={'/socials/watsupp.png'} width={30} height={30} alt={'socials'}/>
               </a>
               <a href="#" className="text-gray-600 hover:text-green-500">
-              <Image src={'/socials/linkedin.png'} width={30} height={30}/>
+              <Image src={'/socials/linkedin.png'} width={30} height={30} alt={'socials'}/>
               </a>
             </div>
           </div>
