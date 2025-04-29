@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Happiness() {
   return (
-    <div className="w-full flex flex-col-reverse md:flex-row items-center justify-between bg-green-400 text-white">
+    <div className="w-full flex flex-col-reverse md:flex-row items-center justify-between bg-[#008000] text-white">
       {/* Left (Text Section) */}
       <div className="w-full md:w-1/2 flex flex-col items-center justify-center gap-4 p-8 text-center md:text-left">
         <h1 className="text-4xl font-bold">Your Happiness,<br />Guaranteed</h1>
