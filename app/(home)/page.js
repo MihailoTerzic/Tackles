@@ -4,6 +4,7 @@ import ServiceSection from "./serviceSection";
 import Happiness from "./Happiness";
 import WhyChoose from "./WhyChoose";
 import FAQ from "./FAQ";
+import TestimonialsCarousel from "./testimonials"
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
   <ServiceSection/>
   <Happiness/>
   <WhyChoose/>
+  <TestimonialsCarousel/>
   <FAQ/>
   </div>
   </>

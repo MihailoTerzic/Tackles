@@ -46,7 +46,7 @@ export default function Hero() {
         </form>
 
         {/* Links */}
-        <div className="flex gap-6 text-sm font-medium pt-4 text-xl">
+        <div className="flex gap-6  font-medium pt-4 text-xl">
           <Link href="#">Articles</Link>
           <span className="hidden sm:inline">-</span>
           <Link href="#">Hometips</Link>
