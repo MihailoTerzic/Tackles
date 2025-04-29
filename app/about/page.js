@@ -4,47 +4,51 @@ import React from 'react'
 
 export default function page() {
   return (
-    <div className='bg-white text-black'>
-      <TopHero name={'About'} img={'/about/hero.jpg'}/>
+    <>
+      <TopHero name="About" img="/about/hero.jpg" />
 
-      <div className='flex flex-col container mx-auto h-[70vh] text-center py-20 gap-5'>
-        <p className='text-xl text-green-400'>All About Us</p>
-    <h1 className='text-4xl font-bold pb-20'>About Tackles</h1>
-    <p className='text-xl text-start'>Tackles Technical LLC, located in the vibrant city of Dubai, is a leading provider of comprehensive technical services for residential, commercial, and industrial properties. We specialize in a wide range of maintenance and repair solutions, including expert painting, plumbing, plastering, wallpaper fixing, floor and wall tiling, and carpentry. Our skilled team also handles air conditioning repairs, air filtration system maintenance, and professional cladding services.
-<br/><br/>
-With a focus on delivering quality craftsmanship and timely solutions, Tackles Technical LLC is committed to enhancing the comfort, functionality, and aesthetics of properties across Dubai. Our dedication to excellence, reliability, and customer satisfaction makes us a trusted partner for all technical and maintenance needs.</p>
-      </div>
-
-
-      <div className="container mx-auto px-4 py-12 flex flex-col lg:flex-row items-center  gap-8">
-      {/* Left - Image */}
-      <div className="w-full lg:w-1/2">
-        <Image
-          src="/about/paint.jpg"
-          alt="paint"
-          width={800}
-          height={600}
-          className="rounded-xl w-full h-auto object-cover"
-        />
-      </div>
-
-      {/* Right - Text Content */}
-      <div className="w-full lg:w-1/2  px-10 flex flex-col gap-10 xl:gap-20 ">
-        <div>
-          <h1 className="text-2xl font-bold text-green-500 mb-2">Our Mission</h1>
-          <p className="text-xl text-gray-700">
-            We want to provide every repair or decoration and design services so that you don't need to go through the problem of searching different places for different services.
+      <div className="bg-white text-black flex flex-col items-center  justify-between gap-20">
+        {/* Main About Text Section */}
+        <div className="w-[80%] mx-auto text-center py-16 space-y-6">
+          <p className="text-xl text-green-500 font-medium">All About Us</p>
+          <h1 className="text-4xl font-bold pb-10">About Tackles</h1>
+          <p className="text-xl md:text-xl text-gray-800  leading-relaxed text-justify">
+            Tackles Technical LLC, located in the vibrant city of Dubai, is a leading provider of comprehensive technical services for residential, commercial, and industrial properties. We specialize in a wide range of maintenance and repair solutions, including expert painting, plumbing, plastering, wallpaper fixing, floor and wall tiling, and carpentry. Our skilled team also handles air conditioning repairs, air filtration system maintenance, and professional cladding services.
+            <br /><br />
+            With a focus on delivering quality craftsmanship and timely solutions, Tackles Technical LLC is committed to enhancing the comfort, functionality, and aesthetics of properties across Dubai. Our dedication to excellence, reliability, and customer satisfaction makes us a trusted partner for all technical and maintenance needs.
           </p>
         </div>
 
-        <div>
-          <h1 className="text-2xl font-bold text-green-500 mb-2">Our Goals</h1>
-          <p className="text-xl text-gray-700">
-            Tackles focuses on providing our clients the best service anyone can provide and make your lives convenient and comfortable. Any work related to either plumbing, painting, plastering, or equipment installation like AC and Purifier is our problem.
-          </p>
+        {/* Image + Mission/Goals Section */}
+        <div className="w-[80%] mx-auto flex flex-col xl:flex-row items-center justify-between gap-16 py-20">
+          {/* Image */}
+          <div className="w-full xl:w-1/2">
+            <Image
+              src="/about/paint.jpg"
+              alt="Paint roller"
+              width={1000}
+              height={700}
+              className="rounded-xl w-full h-auto object-cover"
+            />
+          </div>
+
+          {/* Mission and Goals */}
+          <div className="w-full xl:w-1/2 flex flex-col gap-12 text-left">
+            <div>
+              <h2 className="text-3xl text-center mb-3"><span className='text-green-600'>Our</span> Mission</h2>
+              <p className="text-xl md:text-xl text-gray-700 leading-relaxed text-justify">
+                We want to provide every repair or decoration and design service so that you don’t need to go through the problem of searching different places for different services.
+              </p>
+            </div>
+            <div>
+            <h2 className="text-3xl text-center mb-3"><span className='text-green-600'>Our</span> Goals</h2>
+              <p className="text-xl md:text-xl text-gray-700 leading-relaxed text-justify">
+                Tackles focuses on providing our clients the best service anyone can provide and making your lives convenient and comfortable. Any work related to either plumbing, painting, plastering, or equipment installation like AC and purifiers is our problem.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    </div>
+    </>
   )
 }
