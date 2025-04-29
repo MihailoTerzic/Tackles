@@ -62,7 +62,7 @@ export default function Team() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {teamMembers.map((member, index) => (
-          <div key={index} className="border border-green-400 rounded-2xl p-4 flex flex-col items-center text-center">
+          <div key={index} className="border border-green-400 max-w-xs rounded-2xl p-4 flex flex-col items-center text-center">
             <Image src={member.img} alt={member.name} width={200} height={200} className=" rounded-full object-cover mb-4" />
             <h2 className="font-bold">{member.name}</h2>
             <p className="text-sm text-gray-500 mb-4">{member.role}</p>
