@@ -3,7 +3,7 @@ import React from 'react';
 
 const Card = ({ img, text, description, className = "" }) => {
   return (
-    <div className={`border-2 border-green-400 p-8 px-10 flex flex-col  items-center justify-between gap-5 w-full md:w-[45%] lg:w-[30%] ${className}`}>
+    <div className={`border-2 border-[#008000] p-8 px-10 flex flex-col  items-center justify-between gap-5 w-full md:w-[45%]  ${className}`}>
       <Image src={img} alt={text} width={50} height={50} className='object-contain' />
       <p className='text-2xl  text-center'>{text}</p>
       {description && <p className=' text-justify'>{description}</p>}
@@ -22,9 +22,9 @@ export default function WhyChoose() {
         </p>
 
         <div className='flex flex-wrap justify-center gap-16'>
-          <Card img='/homepage/fast service icon.png' text='Fast Services' description='We respond to any inquiry within two hours and we are available for consultation as soon as the next day' />
-          <Card img='/homepage/paint icon.png' text='Quality Work' description='We use top quality painting products from the market only. Moreover, painting requires skill and expertise' />
-          <Card img='/homepage/smile-beam icon.png' text='Customer Satisfaction' description='We are a painting company who is not happy until you are happy. Therefore, our team will talk you through the process' />
+          <Card className='lg:w-[30%]' img='/homepage/fast service icon.png' text='Fast Services' description='We respond to any inquiry within two hours and we are available for consultation as soon as the next day' />
+          <Card className='lg:w-[30%]' img='/homepage/paint icon.png' text='Quality Work' description='We use top quality painting products from the market only. Moreover, painting requires skill and expertise' />
+          <Card className='lg:w-[30%]' img='/homepage/smile-beam icon.png' text='Customer Satisfaction' description='We are a painting company who is not happy until you are happy. Therefore, our team will talk you through the process' />
         </div>
       </div>
 {/**We respond to any inquiry within two hours and we are available for consultation as soon as the next day */}
@@ -37,11 +37,11 @@ export default function WhyChoose() {
         Planning administration with one of our nearby groups is simple. We are your one-call answer for all your home improvement and business upkeep needs! You can likewise start the planning system through our internet based assistance booking framework. At the point when you work with us, you can have confidence to outwit our support administrations.
         </p>
 
-        <div className='flex flex-wrap justify-center gap-6'>
-          <Card img='/homepage/checkmark.png' text='Drop an inquiry' />
-          <Card img='/homepage/fa-solid_pencil-ruler.png' text='Inspection & Quotation' />
-          <Card img='/homepage/mdi_like.png' text='Scope Matrix & Timeline' />
-          <Card img='/homepage/handshake.png' text='Handover Work To Client' />
+        <div className='flex flex-wrap justify-between gap-6'>
+          <Card className='lg:w-[20%]' img='/homepage/checkmark.png' text='Drop an inquiry' />
+          <Card className='lg:w-[20%]' img='/homepage/fa-solid_pencil-ruler.png' text='Inspection & Quotation' />
+          <Card className='lg:w-[20%]' img='/homepage/mdi_like.png' text='Scope Matrix & Timeline' />
+          <Card className='lg:w-[20%]' img='/homepage/handshake.png' text='Handover Work To Client' />
         </div>
       </div>
     </>

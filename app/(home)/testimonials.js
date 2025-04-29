@@ -148,7 +148,7 @@ export default function TestimonialsCarousel() {
           className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white p-2 rounded-full shadow-md hover:bg-green-50 transition-colors"
           aria-label="Previous testimonial"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-[#008000]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
           </svg>
         </button>
@@ -161,7 +161,7 @@ export default function TestimonialsCarousel() {
               className="px-3 flex-shrink-0"
               style={{ width: `${100 / visibleCount}%` }}
             >
-              <div className="bg-white border border-green-400 rounded-lg p-6 shadow-md h-full hover:shadow-lg transition-shadow">
+              <div className="bg-white border border-[#008000] rounded-lg p-6 shadow-md h-full hover:shadow-lg transition-shadow">
                 <div className="flex items-center justify-between mb-4">
                   <div>
                     <h2 className="text-lg font-bold">{member.name}</h2>
@@ -172,7 +172,7 @@ export default function TestimonialsCarousel() {
                     width={64}
                     height={64}
                     alt={member.name}
-                    className="w-16 h-16 object-cover rounded-full border-2 border-green-200"
+                    className="w-16 h-16 object-cover rounded-full border-2 border-[#008000]"
                   />
                 </div>
                 <p className="text-gray-600 text-sm">"{member.text}"</p>
@@ -186,7 +186,7 @@ export default function TestimonialsCarousel() {
           className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white p-2 rounded-full shadow-md hover:bg-green-50 transition-colors"
           aria-label="Next testimonial"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-[#008000]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
         </button>
@@ -199,7 +199,7 @@ export default function TestimonialsCarousel() {
             key={index}
             onClick={() => setActiveIndex(index)}
             className={`w-3 h-3 rounded-full transition-all duration-300 ${
-              index === activeIndex ? 'bg-green-600 w-6' : 'bg-gray-300'
+              index === activeIndex ? 'bg-[#008000] w-6' : 'bg-gray-300'
             }`}
             aria-label={`Go to testimonial ${index + 1}`}
           />

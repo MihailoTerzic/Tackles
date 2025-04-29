@@ -62,19 +62,19 @@ export default function Team() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
         {teamMembers.map((member, index) => (
-          <div key={index} className="border border-green-400 max-w-xs rounded-2xl p-4 flex flex-col items-center text-center">
+          <div key={index} className="border border-[#008000] max-w-xs rounded-2xl p-4 flex flex-col items-center text-center">
             <Image src={member.img} alt={member.name} width={200} height={200} className=" rounded-full object-cover mb-4" />
             <h2 className=" text-xl">{member.name}</h2>
             <p className="text-lg text-gray-600 pt-4">{member.role}</p>
 
             <div className="flex space-x-4 pt-4">
-              <a href="#" className="text-gray-600 hover:text-green-500">
+              <a href="#" className="text-gray-600 hover:text-[#008000]">
                 <Image src={'/socials/facebook.png'} width={30} height={30} alt={'socials'}/>
               </a>
-              <a href="#" className="text-gray-600 hover:text-green-500">
+              <a href="#" className="text-gray-600 hover:text-[#008000]">
               <Image src={'/socials/watsupp.png'} width={30} height={30} alt={'socials'}/>
               </a>
-              <a href="#" className="text-gray-600 hover:text-green-500">
+              <a href="#" className="text-gray-600 hover:text-[#008000]">
               <Image src={'/socials/linkedin.png'} width={30} height={30} alt={'socials'}/>
               </a>
             </div>

@@ -27,7 +27,7 @@ export default function ContactPage() {
           {/* Info Block */}
           <div className="space-y-10 w-full lg:w-1/2">
             <div>
-              <p className="text-green-600 font-semibold mb-2">Get In Touch</p>
+              <p className="text-[#008000] font-semibold mb-2">Get In Touch</p>
               <h2 className="text-3xl font-bold">Get Closer Now</h2>
             </div>
 
@@ -35,7 +35,7 @@ export default function ContactPage() {
               <div className="space-y-1">
                 <div className="flex items-center gap-4">
                   <Image src="/contact/location.png" width={32} height={32} alt="location" />
-                  <p className="text-green-600 font-medium">Location</p>
+                  <p className="text-[#008000] font-medium">Location</p>
                 </div>
                 <p className="text-lg text-gray-800 pl-10">01 Ontario Tower Business Bay</p>
               </div>
@@ -43,7 +43,7 @@ export default function ContactPage() {
               <div className="space-y-1">
                 <div className="flex items-center gap-4">
                   <Image src="/contact/phone.png" width={32} height={32} alt="phone" />
-                  <p className="text-green-600 font-medium">Phone</p>
+                  <p className="text-[#008000] font-medium">Phone</p>
                 </div>
                 <p className="text-lg text-gray-800 pl-10">+971-55-8155029</p>
               </div>
@@ -51,7 +51,7 @@ export default function ContactPage() {
               <div className="space-y-1">
                 <div className="flex items-center gap-4">
                   <Image src="/contact/oui_email.png" width={32} height={32} alt="email" />
-                  <p className="text-green-600 font-medium">Email</p>
+                  <p className="text-[#008000] font-medium">Email</p>
                 </div>
                 <p className="text-lg text-gray-800 pl-10">info@tackles.ae</p>
               </div>
@@ -67,7 +67,7 @@ export default function ContactPage() {
               placeholder="Name"
               value={form.name}
               onChange={handleChange}
-              className="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400"
+              className="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#008000]"
             />
             <input
               type="tel"
@@ -75,13 +75,13 @@ export default function ContactPage() {
               placeholder="Phone"
               value={form.phone}
               onChange={handleChange}
-              className="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400"
+              className="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#008000]"
             />
             <select
               name="service"
               value={form.service}
               onChange={handleChange}
-              className="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400"
+              className="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#008000]"
             >
               <option value="">Service</option>
               <option value="installation">Installation</option>
@@ -94,11 +94,11 @@ export default function ContactPage() {
               placeholder="Email"
               value={form.email}
               onChange={handleChange}
-              className="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400"
+              className="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#008000]"
             />
             <button
               type="submit"
-              className="w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition"
+              className="w-full bg-green-600 text-white py-3 rounded-lg hover:bg-[#008000] transition"
             >
               Submit
             </button>

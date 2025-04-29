@@ -17,30 +17,30 @@ export default function BookAppointment() {
             <input 
               type="text" 
               placeholder="Full Name*" 
-              className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+              className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#008000]"
             />
 
             <input 
               type="email" 
               placeholder="Email*" 
-              className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+              className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#008000]"
             />
 
             <input 
               type="date" 
-              className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 text-gray-400"
+              className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#008000] text-gray-400"
             />
 
             <input 
               type="text" 
               placeholder="Budget*" 
-              className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+              className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#008000]"
             />
 
             <input 
               type="text" 
               placeholder="Location*" 
-              className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+              className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#008000]"
             />
           </div>
 
@@ -49,28 +49,28 @@ export default function BookAppointment() {
             <input 
               type="tel" 
               placeholder="Phone Number*" 
-              className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+              className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#008000]"
             />
 
             <input 
               type="date" 
               placeholder="Required End Date*" 
-              className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 text-gray-400"
+              className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#008000] text-gray-400"
             />
 
-            <select className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+            <select className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#008000]">
               <option value="">Type*</option>
               <option value="Commercial">Commercial</option>
               <option value="Residential">Residential</option>
             </select>
 
-            <select className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+            <select className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#008000]">
               <option value="">Priority*</option>
               <option value="Urgent">Urgent</option>
               <option value="Standard">Standard</option>
             </select>
 
-            <select className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+            <select className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#008000]">
               <option value="">Estimated Time*</option>
               <option value="1 Week">1 Week</option>
               <option value="2 Weeks">2 Weeks</option>
@@ -82,7 +82,7 @@ export default function BookAppointment() {
           <div className="md:col-span-2">
             <textarea 
               placeholder="Description"
-              className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 min-h-[100px]"
+              className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#008000] min-h-[100px]"
             />
           </div>
 
@@ -90,7 +90,7 @@ export default function BookAppointment() {
           <div className="md:col-span-2">
             <button 
               type="submit"
-              className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 rounded-md transition-all"
+              className="w-full bg-[#008000] hover:bg-green-700 text-white font-semibold py-3 rounded-md transition-all"
             >
               Submit
             </button>

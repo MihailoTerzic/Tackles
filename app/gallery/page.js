@@ -29,7 +29,7 @@ export default function GalleryPage() {
         {galleryImages.map((img, index) => (
           <div 
             key={index}
-            className='relative aspect-square overflow-hidden rounded-xl border-2 border-green-600 hover:shadow-lg transition-all duration-300'
+            className='relative aspect-square overflow-hidden rounded-xl border-2 border-[#008000] hover:shadow-lg transition-all duration-300'
           >
             <Image
               src={img}

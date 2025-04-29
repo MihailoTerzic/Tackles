@@ -39,7 +39,7 @@ export default function Hero() {
 
           <button
             type="submit"
-            className="bg-green-600 hover:bg-green-700 text-white px-6 py-4 rounded-xl font-semibold"
+            className="bg-[#008000] hover:scale-105 transition-transform duration-200 ease-in text-white px-6 py-4 rounded-xl font-semibold"
           >
             Let's go !
           </button>
