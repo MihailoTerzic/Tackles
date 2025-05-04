@@ -11,7 +11,7 @@ const galleryImages = [
   '/gallery/gallery4.jpg',
   '/gallery/gallery5.jpg',
   '/gallery/gallery6.jpg',
-  '/gallery/gallery7.png',
+  '/gallery/gallery7.jpg',
   '/gallery/gallery8.jpg',
   '/gallery/gallery9.jpg',
   '/gallery/gallery10.jpg',
@@ -61,7 +61,7 @@ export default function GalleryPage() {
               src={img}
               fill
               alt={`Gallery image ${index + 1}`}
-              className='object-cover hover:scale-105 transition-transform duration-500'
+              className='object-cover hover:scale-105 border-2 border-[#008000] transition-transform duration-500'
               sizes="(max-width: 640px) 100vw,
                      (max-width: 768px) 50vw,
                      (max-width: 1024px) 33vw,
