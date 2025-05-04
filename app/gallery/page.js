@@ -1,6 +1,8 @@
+'use client'
+
 import TopHero from '@/components/TopHero'
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 
 const galleryImages = [
   '/gallery/gallery1.jpg',
@@ -22,14 +24,38 @@ const galleryImages = [
 ]
 
 export default function GalleryPage() {
+  const [selectedImg, setSelectedImg] = useState(null)
+
+  const handleClose = () => setSelectedImg(null)
+
   return (
     <>
       <TopHero img={'/gallery/hero.jpg'} name={'Gallery'} />
+      
+      {/* Modal */}
+      {selectedImg && (
+        <div
+          className="fixed inset-0 z-50 bg-black/70 flex items-center justify-center"
+          onClick={handleClose}
+        >
+          <div className="relative w-[90vw] h-[90vh] max-w-4xl">
+            <Image
+              src={selectedImg}
+              alt="Full screen"
+              fill
+              className="object-contain rounded-xl"
+            />
+          </div>
+        </div>
+      )}
+
+      {/* Gallery Grid */}
       <div className='w-[90%] mx-auto py-30 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'>
         {galleryImages.map((img, index) => (
           <div 
             key={index}
-            className='relative aspect-square overflow-hidden rounded-xl border-2 border-[#008000] hover:shadow-lg transition-all duration-300'
+            className='relative aspect-square overflow-hidden rounded-xl hover:shadow-lg transition-all duration-300 cursor-pointer'
+            onClick={() => setSelectedImg(img)}
           >
             <Image
               src={img}
@@ -41,7 +67,7 @@ export default function GalleryPage() {
                      (max-width: 1024px) 33vw,
                      25vw"
               quality={85}
-              priority={index < 4} // Only first 4 images get priority loading
+              priority={index < 4}
             />
           </div>
         ))}
