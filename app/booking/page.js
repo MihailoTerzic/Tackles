@@ -8,7 +8,7 @@ export default function BookAppointment() {
   
     <TopHero img={'/services/hero.jpg'} name={'Book An Appointment'} />
    <div className="min-h-screen flex items-center justify-center bg-gray-50 py-10 px-4">
-      <div className="w-full max-w-4xl bg-white p-8 rounded-lg shadow-md">
+      <div className="w-full max-w-4xl bg-white text-black p-8 rounded-lg shadow-md">
         <h2 className="text-2xl font-bold mb-8 text-center">Book An Appointment</h2>
 
         <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
