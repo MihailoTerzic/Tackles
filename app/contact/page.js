@@ -25,7 +25,7 @@ export default function ContactPage() {
       <section className="bg-white py-20 px-6 md:px-12">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-16 justify-between items-center">
           {/* Info Block */}
-          <div className="space-y-10 w-full lg:w-1/2">
+          <div className="space-y-10 w-full lg:w-1/2 bg-gray-200 p-5 rounded-2xl">
             <div>
               <p className="text-[#008000] font-semibold mb-2">Get In Touch</p>
               <h2 className="text-3xl font-bold">Get Closer Now</h2>

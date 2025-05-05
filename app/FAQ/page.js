@@ -55,12 +55,12 @@ export default function FAQ() {
     <div className="container mx-auto w-[80%] py-20 flex flex-col gap-8 bg-white text-black">
      
 
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-8 bg-gray-50 p-10 rounded-2xl">
         {faqs.map((faq, index) => (
           <div
           onClick={() => toggle(index)}
             key={index}
-            className="border border-gray-300 rounded-lg p-5   shadow-sm transition-all duration-300"
+            className="border border-gray-300 bg-white rounded-lg p-5 py-8  shadow-md transition-all duration-300"
           >
             <button
               className="w-full flex justify-between items-center text-left text-lg font-medium"

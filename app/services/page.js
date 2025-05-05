@@ -5,7 +5,7 @@ import React from 'react'
 const Card = ({ img, name, text }) => {
   return (
     <div className='border border-[#008000] p-5 flex flex-col items-center justify-around '>
-      <Image src={img} alt={name} width={200} height={200} />
+      <Image src={img} alt={name} width={200} height={200} className='bg-green-100'/>
       <h1 className='text-[#008000] py-4 text-2xl'>{name}</h1>
       {text && <p className='text-xl'>{text}</p>}
     </div>

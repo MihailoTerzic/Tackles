@@ -5,6 +5,7 @@ import Happiness from "./Happiness";
 import WhyChoose from "./WhyChoose";
 import FAQ from "./FAQ";
 import TestimonialsCarousel from "./testimonials"
+import StatsSection from "./statsSection";
 
 export default function Home() {
   return (
@@ -13,7 +14,11 @@ export default function Home() {
   <div className="bg-white text-black">
 
   <ServiceSection/>
+  {/**
+   * 
   <Happiness/>
+   */}
+   <StatsSection/>
   <WhyChoose/>
   <TestimonialsCarousel/>
   <FAQ/>
