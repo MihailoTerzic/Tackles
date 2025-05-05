@@ -47,7 +47,9 @@ export default function Footer({ image }) {
           <div>
             <h3 className="font-bold text-lg mb-2">Browse More</h3>
             <ul className="space-y-1">
+              <li><Link href="/booking">Booking</Link></li>
               <li><Link href="/team">Team</Link></li>
+              <li><Link href="/gallery">Gallery</Link></li>
               <li><Link href="/testimonials">Testimonials</Link></li>
               <li><Link href="/FAQ">FAQs</Link></li>
               <li><Link href="/privacy">Privacy Policy</Link></li>

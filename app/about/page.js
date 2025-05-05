@@ -1,6 +1,7 @@
 import TopHero from '@/components/TopHero'
 import Image from 'next/image'
 import React from 'react'
+import OurValues from './values'
 
 export default function page() {
   return (
@@ -18,6 +19,8 @@ export default function page() {
             With a focus on delivering quality craftsmanship and timely solutions, Tackles Technical LLC is committed to enhancing the comfort, functionality, and aesthetics of properties across Dubai. Our dedication to excellence, reliability, and customer satisfaction makes us a trusted partner for all technical and maintenance needs.
           </p>
         </div>
+
+        <OurValues/>
 
         {/* Image + Mission/Goals Section */}
         <div className="w-[80%] mx-auto flex flex-col xl:flex-row items-center justify-between gap-16 py-20">
