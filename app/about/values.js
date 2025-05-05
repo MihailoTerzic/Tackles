@@ -11,7 +11,7 @@ export default function OurValues() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
             {
-              icon: <Image src={'/homepage/checkmark.png'} height={50} width={50} alt="icon"/>,
+              icon: <Image src={'/about/handshake.png'} height={50} width={50} alt="icon"/>,
               title: 'Honesty and Integrity',
               desc: 'We are committed to promote high standards of honesty and integrity by being fair, honest, transparent and ethical in our conduct and actions.'
             },
