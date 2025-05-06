@@ -7,13 +7,13 @@ export default function BookAppointment() {
   return ( <>
   
     <TopHero img={'/services/hero.jpg'} name={'Book An Appointment'} />
-   <div className="min-h-screen flex items-center justify-center bg-gray-50 py-10 px-4">
-      <div className="w-full max-w-4xl bg-white text-black p-8 rounded-lg shadow-md">
-        <h2 className="text-2xl font-bold mb-8 text-center">Book An Appointment</h2>
+   <div className="min-h-screen flex items-center justify-center py-10 px-4">
+      <div className="w-[80%] bg-white text-black p-8  min-h-screen"> {/** rounded and shadow */}
+        <h2 className="text-3xl font-bold mb-20 text-center">Book An Appointment</h2>
 
-        <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <form className="grid grid-cols-1 md:grid-cols-2 gap-6 gap-y-10">
           {/* Left Column */}
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-6 gap-y-10">
             <input 
               type="text" 
               placeholder="Full Name*" 
@@ -45,7 +45,7 @@ export default function BookAppointment() {
           </div>
 
           {/* Right Column */}
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-6 gap-y-10 justify-between">
             <input 
               type="tel" 
               placeholder="Phone Number*" 
@@ -87,10 +87,10 @@ export default function BookAppointment() {
           </div>
 
           {/* Submit Button - Full Width */}
-          <div className="md:col-span-2">
+          <div className="md:col-span-2 lg:mx-auto">
             <button 
               type="submit"
-              className="w-full bg-[#008000] hover:bg-green-700 text-white font-semibold py-3 rounded-md transition-all"
+              className=" container lg:w-lg  bg-[#008000] hover:bg-green-700 text-white font-semibold py-3 rounded-md transition-all"
             >
               Submit
             </button>
