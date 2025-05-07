@@ -32,13 +32,7 @@ export default function ContactPage() {
             </div>
 
             <div className="space-y-8">
-              <div className="space-y-1">
-                <div className="flex items-center gap-4">
-                  <Image src="/contact/location.png" width={32} height={32} alt="location" />
-                  <p className="text-[#008000] font-medium">Location</p>
-                </div>
-                <p className="text-lg text-gray-800 pl-10">01 Ontario Tower Business Bay</p>
-              </div>
+             
 
               <div className="space-y-1">
                 <div className="flex items-center gap-4">
@@ -55,6 +49,28 @@ export default function ContactPage() {
                 </div>
                 <p className="text-lg text-gray-800 pl-10">info@tackles.ae</p>
               </div>
+
+              <div className="space-y-1">
+                <div className="flex items-center gap-4">
+                  <Image src="/contact/location.png" width={32} height={32} alt="location" />
+                  <p className="text-[#008000] font-medium">Location</p>
+                </div>
+                <p className="text-lg text-gray-800 pl-10">01 Ontario Tower Business Bay</p>
+              </div>
+
+              <div className="pt-4">
+  <iframe
+   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.527030694837!2d55.2618246!3d25.185443299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69d103361679%3A0x13f2d0058a5050cf!2sOntario%20Tower%20-%20Business%20Bay%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2srs!4v1746631852764!5m2!1sen!2srs"
+    width="100%"
+    height="300"
+    style={{ border: 0 }}
+    allowFullScreen=""
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+    className="rounded-xl"
+  ></iframe>
+</div>
+
             </div>
           </div>
 
