@@ -1,13 +1,16 @@
 import TopHero from '@/components/TopHero'
 import Image from 'next/image'
 import React from 'react'
-
 const Card = ({ img, name, text }) => {
   return (
-    <div className='border border-[#008000] p-5 flex flex-col items-center justify-around '>
-      <Image src={img} alt={name} width={200} height={200} className='bg-green-100'/>
-      <h1 className='text-[#008000] py-4 text-2xl'>{name}</h1>
-      {text && <p className='text-xl'>{text}</p>}
+    <div className='border border-[#008000] p-5 flex flex-col items-start justify-around h-[70vh]  mx-auto'>
+      <div className='bg-[#F2FFF2] w-full h-[60%] flex items-center justify-center'>
+        <Image src={img} alt={name} width={300} height={300} />
+      </div>
+      <div className='flex flex-col items-start gap-2 font-semibold'>
+        <h1 className='text-[#008000] text-2xl font- py-4'>{name}</h1>
+        {text && <p className='text-start text-lg'>{text}</p>}
+      </div>
     </div>
   )
 }
@@ -20,7 +23,7 @@ export default function page() {
         <p className='text-xl text-[#008000]'>All Services</p>
         <h1 className='text-4xl font-bold pb-20'>Our Services</h1>
 
-        <div className='w-[90%] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-8'>
+        <div className='w-[90%] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-8 lg:gap-20'>
           <Card img={'/services/air-conditioning.png'} name={'Air Conditioning'} text={'Whether it is hot sunny day or cold winter night, Our air conditioning service will let you be at the best room temperature for you. Our AC system is budget friendly and durable.'} />
           <Card img={'/services/air-filtration.png'} name={'Air Filtration'} text={'Breathing dirty air will cause disease and death in worst case scenario. Don’t take any risks since we provide air filtration system which will filter air at best in adequate price.'} />
           <Card img={'/services/carpentry.png'} name={'Carpentry'} text={'We repair, design and install quality flooring at best prices. By hiring our services, you can transform the style of entire house. Simple floor can be replaced with attractive wood flooring.'} />

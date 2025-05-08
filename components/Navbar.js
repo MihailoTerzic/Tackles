@@ -9,7 +9,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsTop(window.scrollY < 100) // adjust this value based on hero height
+      setIsTop(window.scrollY < 100)
     }
 
     window.addEventListener('scroll', handleScroll)
@@ -17,28 +17,27 @@ export default function Navbar() {
   }, [])
 
   const navClasses = isTop
-    ? ' text-white bg-transparent'
+    ? 'text-white bg-transparent'
     : 'bg-white text-black shadow-md'
 
-  /**   const linkClasses = `transition-all duration-300 ${
-      isTop ? 'text-white' : 'text-black'
-    } hover:font-bold` */
-
-    const linkClasses = `transition-all duration-300 transform hover:scale-120 ${
-      isTop ? 'text-white hover:font-bold' : 'text-black hover:font-bold'
-    } font-medium`
-    
+  const linkClasses = `transition-all duration-300 transform hover:scale-110 ${
+    isTop ? 'text-white hover:font-bold' : 'text-black hover:font-bold'
+  } font-medium`
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 px-4 py-4 backdrop-blur-sm border-0 transition-all duration-300 ${navClasses}`}
+      className={`fixed top-0 left-0 w-full z-50 px-4 py-6 backdrop-blur-sm border-0 transition-all duration-300 ${navClasses}`}
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <Link href="/" className={`text-xl font-bold ${isTop ? 'text-white' : 'text-black'}`}>
+        <Link
+          href="/"
+          className={`text-xl font-bold ${isTop ? 'text-white' : 'text-black'}`}
+        >
           Tackles
         </Link>
 
-        <div className="hidden md:flex space-x-6">
+        {/* Desktop Menu */}
+        <div className="hidden md:flex items-center space-x-6">
           <Link href="/" className={linkClasses}>
             Home
           </Link>
@@ -51,8 +50,17 @@ export default function Navbar() {
           <Link href="/contact" className={linkClasses}>
             Contact
           </Link>
+          <Link href="/gallery" className={linkClasses}>
+            Gallery
+          </Link>
+          <button
+            className={`bg-[#008000] transition-all duration-300 transform hover:scale-110 hover:bg-green-700 text-white rounded-lg font-semibold p-2 px-4 text-lg`}
+          >
+            Reach Us
+          </button>
         </div>
 
+        {/* Mobile Menu Toggle */}
         <button
           onClick={() => setIsOpen(!isOpen)}
           className={`md:hidden focus:outline-none ${isTop ? 'text-white' : 'text-black'}`}
@@ -61,8 +69,9 @@ export default function Navbar() {
         </button>
       </div>
 
+      {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden px-4 pt-2 space-y-2">
+        <div className="md:hidden px-4 pt-2 space-y-2 text-center">
           <Link href="/" className={`${linkClasses} block`}>
             Home
           </Link>
@@ -75,6 +84,14 @@ export default function Navbar() {
           <Link href="/contact" className={`${linkClasses} block`}>
             Contact
           </Link>
+          <Link href="/gallery" className={`${linkClasses} block`}>
+            Gallery
+          </Link>
+          <button
+            className={`w-md bg-[#008000] hover:bg-green-700 text-white rounded-lg font-semibold py-2 text-center text-lg`}
+          >
+            Reach Us
+          </button>
         </div>
       )}
     </nav>

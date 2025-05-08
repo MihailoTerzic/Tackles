@@ -3,7 +3,7 @@ import React from 'react';
 
 const Card = ({ img, text, description, className = "" }) => {
   return (
-    <div className={`border-2 border-[#008000] p-8 px-10 flex flex-col  items-center justify-between gap-5 w-full md:w-[45%]  ${className}`}>
+    <div className={`border-2 border-[#008000] p-8 px-10 flex flex-col rounded-2xl  items-center justify-between gap-5 w-full md:w-[45%]  ${className}`}>
       <Image src={img} alt={text} width={50} height={50} className='object-contain' />
       <p className='text-2xl  text-center'>{text}</p>
       {description && <p className=' text-justify'>{description}</p>}
@@ -22,8 +22,8 @@ export default function WhyChoose() {
         </p>
 
         <div className='flex flex-wrap justify-center gap-16'>
-          <Card className='lg:w-[30%]' img='/homepage/fast service icon.png' text='Fast Services' description='We respond to any inquiry within two hours and we are available for consultation as soon as the next day' />
-          <Card className='lg:w-[30%]' img='/homepage/paint icon.png' text='Quality Work' description='We use top quality painting products from the market only. Moreover, painting requires skill and expertise' />
+          <Card className='lg:w-[30%]' img='/homepage/tunderbolt.png' text='Fast Services' description='We respond to any inquiry within two hours and we are available for consultation as soon as the next day' />
+          <Card className='lg:w-[30%]' img='/homepage/star.png' text='Quality Work' description='We use top quality painting products from the market only. Moreover, painting requires skill and expertise' />
           <Card className='lg:w-[30%]' img='/homepage/smile-beam icon.png' text='Customer Satisfaction' description='We are a painting company who is not happy until you are happy. Therefore, our team will talk you through the process' />
         </div>
       </div>

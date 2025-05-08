@@ -9,7 +9,9 @@ export default function Footer({ image }) {
   return (
         <footer className="relative w-full text-white">
       {/* Background image */}
-      <div className="absolute inset-0 -z-10">
+      <div className="absolute inset-0 -z-10 bg-[#006600]">
+        {/**
+         * 
         <Image
           src={image}
           alt="Footer background"
@@ -18,6 +20,7 @@ export default function Footer({ image }) {
           quality={100}
           className="brightness-[.4]" // darken the image
         />
+         */}
       </div>
 
       <div className="w-[80%] mx-auto py-20 flex flex-col gap-12">

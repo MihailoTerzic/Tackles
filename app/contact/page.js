@@ -10,6 +10,7 @@ export default function ContactPage() {
     phone: '',
     service: '',
     email: '',
+    message: '',
   })
 
   const handleChange = (e) => {
@@ -23,7 +24,11 @@ export default function ContactPage() {
 
       {/* Contact Info and Form */}
       <section className="bg-white py-20 px-6 md:px-12">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-16 justify-between items-center">
+        <p className="text-center text-black text-2xl font-bold pb-10">
+          For immediate assistance, please call. For project quotes, please use the form.
+        </p>
+
+        <div className="max-w-7xl mx-auto flex flex-col  lg:flex-row gap-16 justify-between items-center">
           {/* Info Block */}
           <div className="space-y-10 w-full lg:w-1/2 bg-gray-200 p-5 rounded-2xl">
             <div>
@@ -32,51 +37,52 @@ export default function ContactPage() {
             </div>
 
             <div className="space-y-8">
-             
-
               <div className="space-y-1">
                 <div className="flex items-center gap-4">
-                  <Image src="/contact/phone.png" width={32} height={32} alt="phone" />
-                  <p className="text-[#008000] font-medium">Phone</p>
+                  <Image src="/contact/phone.png" width={40} height={40} alt="phone" />
+                  <p className="text-black text-2xl font-bold">Phone</p>
                 </div>
                 <p className="text-lg text-gray-800 pl-10">+971-55-8155029</p>
               </div>
 
               <div className="space-y-1">
                 <div className="flex items-center gap-4">
-                  <Image src="/contact/oui_email.png" width={32} height={32} alt="email" />
-                  <p className="text-[#008000] font-medium">Email</p>
+                  <Image src="/contact/oui_email.png" width={40} height={40} alt="email" />
+                  <p className="text-black text-2xl font-bold">Email</p>
                 </div>
                 <p className="text-lg text-gray-800 pl-10">info@tackles.ae</p>
               </div>
 
               <div className="space-y-1">
                 <div className="flex items-center gap-4">
-                  <Image src="/contact/location.png" width={32} height={32} alt="location" />
-                  <p className="text-[#008000] font-medium">Location</p>
+                  <Image src="/contact/location.png" width={40} height={40} alt="location" />
+                  <p className="text-black text-2xl font-bold">Location</p>
                 </div>
                 <p className="text-lg text-gray-800 pl-10">01 Ontario Tower Business Bay</p>
               </div>
 
               <div className="pt-4">
-  <iframe
-   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.527030694837!2d55.2618246!3d25.185443299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69d103361679%3A0x13f2d0058a5050cf!2sOntario%20Tower%20-%20Business%20Bay%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2srs!4v1746631852764!5m2!1sen!2srs"
-    width="100%"
-    height="300"
-    style={{ border: 0 }}
-    allowFullScreen=""
-    loading="lazy"
-    referrerPolicy="no-referrer-when-downgrade"
-    className="rounded-xl"
-  ></iframe>
-</div>
-
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.527030694837!2d55.2618246!3d25.185443299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69d103361679%3A0x13f2d0058a5050cf!2sOntario%20Tower%20-%20Business%20Bay%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2srs!4v1746631852764!5m2!1sen!2srs"
+                  width="100%"
+                  height="300"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="rounded-xl"
+                ></iframe>
+              </div>
             </div>
           </div>
 
           {/* Contact Form */}
           <form className="w-full lg:w-1/2 max-w-lg bg-gray-50 p-8 rounded-lg shadow-md space-y-6 mt-10 lg:mt-0">
-            <h3 className="text-xl font-bold mb-2">Leave A Message</h3>
+            <div className="space-y-1">
+              <p className="text-[#008000] font-semibold">Send us a message</p>
+              <h3 className="text-2xl font-bold">Whenever you need us, we’re here for you.</h3>
+            </div>
+
             <input
               type="text"
               name="name"
@@ -112,9 +118,16 @@ export default function ContactPage() {
               onChange={handleChange}
               className="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#008000]"
             />
+            <textarea
+              name="message"
+              placeholder="Message"
+              value={form.message}
+              onChange={handleChange}
+              className="w-full border border-gray-300 p-3 rounded-lg h-32 resize-none focus:outline-none focus:ring-2 focus:ring-[#008000]"
+            ></textarea>
             <button
               type="submit"
-              className="w-full bg-green-600 text-white py-3 rounded-lg hover:bg-[#008000] transition"
+              className="w-full bg-[#008000] hover:scale-105 hover:font-bold text-white py-3 rounded-lg hover:bg-[#008000] transition"
             >
               Submit
             </button>
