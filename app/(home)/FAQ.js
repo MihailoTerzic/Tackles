@@ -67,9 +67,13 @@ export default function FAQ() {
                 {openIndex === index ? '–' : '+'}
               </span>
             </button>
-            {openIndex === index && (
-              <p className="mt-4 text-gray-600">{faq.answer}</p>
-            )}
+           <div
+  className={`overflow-hidden transition-all duration-500 ease-in-out ${
+    openIndex === index ? 'max-h-40 opacity-100 mt-4' : 'max-h-0 opacity-0'
+  }`}
+>
+  <p className="text-gray-600">{faq.answer}</p>
+</div>
           </div>
         ))}
       </div>

@@ -14,7 +14,7 @@ export default function ServiceSection() {
   return (
     <div className='h-screen container mx-auto  flex flex-col gap-4 items-center justify-center'>
       <h1 className='text-3xl text-center mb-4 font-bold'>Popular services near <span className='text-[#008000]'>Your Area</span></h1>
-      <div className="flex sm:grid sm:grid-cols-4 sm:grid-rows-2 gap-4 w-full overflow-x-auto">
+      <div className="flex sm:grid sm:grid-cols-4 sm:grid-rows-2 gap-4 w-[80%] overflow-x-auto">
 
 <Card img='/services/plumbing.png' text='Plumbing'/>
 <Card img='/services/painting.png' text='Painting'/>

@@ -70,30 +70,30 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Menu */}
-      {isOpen && (
-        <div className="md:hidden px-4 pt-2 space-y-2 text-center">
-          <Link href="/" className={`${linkClasses} block`}>
-            Home
-          </Link>
-          <Link href="/about" className={`${linkClasses} block`}>
-            About
-          </Link>
-          <Link href="/services" className={`${linkClasses} block`}>
-            Services
-          </Link>
-          <Link href="/contact" className={`${linkClasses} block`}>
-            Contact
-          </Link>
-          <Link href="/gallery" className={`${linkClasses} block`}>
-            Gallery
-          </Link>
-          <button
-            className={`w-md bg-[#008000] hover:bg-green-700 text-white rounded-lg font-semibold py-2 text-center text-lg`}
-          >
-            Reach Us
-          </button>
-        </div>
-      )}
+    {isOpen && (
+  <div className="md:hidden px-4 pt-2 space-y-2 text-center">
+    <Link href="/" className={`${linkClasses} block`} onClick={() => setIsOpen(false)}>
+      Home
+    </Link>
+    <Link href="/about" className={`${linkClasses} block`} onClick={() => setIsOpen(false)}>
+      About
+    </Link>
+    <Link href="/services" className={`${linkClasses} block`} onClick={() => setIsOpen(false)}>
+      Services
+    </Link>
+    <Link href="/contact" className={`${linkClasses} block`} onClick={() => setIsOpen(false)}>
+      Contact
+    </Link>
+    <Link href="/gallery" className={`${linkClasses} block`} onClick={() => setIsOpen(false)}>
+      Gallery
+    </Link>
+    <button
+      className="w-48 mx-auto bg-[#008000] hover:bg-green-700 text-white rounded-lg font-semibold py-2 text-lg"
+    >
+      Reach Us
+    </button>
+  </div>
+)}
     </nav>
   )
 }
