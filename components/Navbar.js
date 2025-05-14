@@ -26,7 +26,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 px-4 py-6 backdrop-blur-sm border-0 transition-all duration-300 ${navClasses}`}
+      className={`fixed top-0 left-0 w-full z-50 px-4 py-6  border-0 transition-all duration-300 ${navClasses}`}
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <Link
@@ -53,11 +53,12 @@ export default function Navbar() {
           <Link href="/gallery" className={linkClasses}>
             Gallery
           </Link>
-          <button
+          <Link
             className={`bg-[#008000] transition-all duration-300 transform hover:scale-110 hover:bg-green-700 text-white rounded-lg font-semibold p-2 px-4 text-lg`}
-          >
-            Reach Us
-          </button>
+            href="/booking">
+            
+            Book Now
+          </Link>
         </div>
 
         {/* Mobile Menu Toggle */}

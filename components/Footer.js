@@ -35,7 +35,7 @@ export default function Footer({ image }) {
         </div>
 
         {/* Footer content */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-sm">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-sm ">
           {/* Column 1 */}
           <div>
             <h3 className="font-bold text-lg mb-2">Tackles</h3>
@@ -47,12 +47,11 @@ export default function Footer({ image }) {
           </div>
 
           {/* Column 2 */}
-          <div>
+          <div className='text-center mx-auto'>
             <h3 className="font-bold text-lg mb-2">Browse More</h3>
-            <ul className="space-y-1">
+            <ul className="space-y-1 text-start">
               <li><Link href="/booking">Booking</Link></li>
               <li><Link href="/team">Team</Link></li>
-              <li><Link href="/gallery">Gallery</Link></li>
               <li><Link href="/testimonials">Testimonials</Link></li>
               <li><Link href="/FAQ">FAQs</Link></li>
               <li><Link href="/privacy">Privacy Policy</Link></li>
@@ -61,9 +60,9 @@ export default function Footer({ image }) {
           </div>
 
           {/* Column 3 */}
-          <div>
+          <div className=' mx-auto'>
             <h3 className="font-bold text-lg mb-2">Services</h3>
-            <ul className="space-y-1">
+            <ul className="space-y-1 text-start">
               <li>Air Conditioning</li>
               <li>Air Filtration</li>
               <li>Electrotechnical Equipment</li>
