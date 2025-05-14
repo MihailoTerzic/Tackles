@@ -130,20 +130,18 @@ export default function TestimonialsCarousel() {
   }
 
   return (
-    <section className="py-16 bg-white w-[90%] mx-auto max-w-7xl relative">
+      <section className="py-16 bg-white w-[90%] mx-auto max-w-7xl relative">
       <h3 className="text-center text-lg text-gray-600 mb-2">What People Say?</h3>
       <h2 className="text-center text-4xl mb-8">Testimonials</h2>
 
-      {/* Carousel Container */}
-      <div 
+      <div
         className="overflow-hidden relative"
-        ref={carouselRef}
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
       >
-        {/* Navigation Arrows */}
-        <button 
+        {/* Navigation Buttons */}
+        <button
           onClick={goPrev}
           className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white p-2 rounded-full shadow-md hover:bg-green-50 transition-colors"
           aria-label="Previous testimonial"
@@ -152,36 +150,44 @@ export default function TestimonialsCarousel() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
           </svg>
         </button>
-        
-        {/* Cards Container */}
-        <div className="flex transition-transform duration-500 ease-in-out">
-          {visibleMembers.map((member, index) => (
-            <div
-              key={`${member.name}-${index}`}
-              className="px-3 flex-shrink-0"
-              style={{ width: `${100 / visibleCount}%` }}
-            >
-              <div className="bg-white border border-[#008000] rounded-lg p-6 shadow-md h-full hover:shadow-lg transition-shadow">
-                <div className="flex items-center justify-between mb-4">
-                  <div>
-                    <h2 className="text-lg font-bold">{member.name}</h2>
-                    <p className="text-sm text-gray-500">{member.role}</p>
+
+        {/* Sliding Container */}
+        <div className="w-full overflow-hidden">
+          <div
+            className="flex transition-transform duration-500 ease-in-out"
+            style={{
+              width: `${(members.length / visibleCount) * 100}%`,
+              transform: `translateX(-${(activeIndex * 100) / totalSlides}%)`,
+            }}
+          >
+            {members.map((member, index) => (
+              <div
+                key={`${member.name}-${index}`}
+                className="px-3 flex-shrink-0"
+                style={{ width: `${100 / (totalSlides * visibleCount)}%` }}
+              >
+                <div className="bg-white border border-[#008000] rounded-lg p-6 shadow-md h-full hover:shadow-lg transition-shadow">
+                  <div className="flex items-center justify-between mb-4">
+                    <div>
+                      <h2 className="text-lg font-bold">{member.name}</h2>
+                      <p className="text-sm text-gray-500">{member.role}</p>
+                    </div>
+                    <Image
+                      src={member.img}
+                      width={64}
+                      height={64}
+                      alt={member.name}
+                      className="w-16 h-16 object-cover rounded-full border-2 border-[#008000]"
+                    />
                   </div>
-                  <Image
-                    src={member.img}
-                    width={64}
-                    height={64}
-                    alt={member.name}
-                    className="w-16 h-16 object-cover rounded-full border-2 border-[#008000]"
-                  />
+                  <p className="text-gray-600 text-sm">"{member.text}"</p>
                 </div>
-                <p className="text-gray-600 text-sm">"{member.text}"</p>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
-        <button 
+        <button
           onClick={goNext}
           className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white p-2 rounded-full shadow-md hover:bg-green-50 transition-colors"
           aria-label="Next testimonial"
@@ -192,7 +198,7 @@ export default function TestimonialsCarousel() {
         </button>
       </div>
 
-      {/* Pagination Dots */}
+      {/* Dots */}
       <div className="flex justify-center mt-6 gap-3">
         {Array.from({ length: totalSlides }).map((_, index) => (
           <button
