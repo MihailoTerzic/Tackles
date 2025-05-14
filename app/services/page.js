@@ -9,7 +9,7 @@ const Card = ({ img, name, text }) => {
       </div>
       <div className='flex flex-col items-start gap-2 font-semibold'>
         <h1 className='text-[#008000] text-2xl font- py-4'>{name}</h1>
-        {text && <p className='text-start text-lg'>{text}</p>}
+        {text && <p className='text-start text-lg pb-2'>{text}</p>}
       </div>
     </div>
   )

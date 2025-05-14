@@ -60,9 +60,9 @@ export default function GalleryPage() {
 
   return (
     <>
-      <TopHero img={'/gallery/hero.jpg'} name={'Gallery'} />
+      <TopHero img="/gallery/hero.jpg" name="Gallery" />
 
-      {/* Modal Slider */}
+      {/* Modal Viewer */}
       {selectedIndex !== null && (
         <div
           className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center"
@@ -70,38 +70,41 @@ export default function GalleryPage() {
           onTouchStart={handleTouchStart}
           onTouchEnd={handleTouchEnd}
         >
-          <div className="relative w-[90vw] h-[90vh] max-w-4xl">
-            <Image
-              src={galleryImages[selectedIndex]}
-              alt="Full screen"
-              fill
-              className="object-contain rounded-xl"
-            />
-            {/* Navigation Arrows */}
-            {/* Left Arrow */}
-{selectedIndex > 0 && (
-  <button
-    onClick={showPrev}
-    className="absolute top-1/2 left-4 -translate-y-1/2 bg-white text-black rounded-full w-12 h-12 flex items-center justify-center text-2xl font-bold shadow-lg hover:bg-gray-200 transition"
-  >
-    ‹
-  </button>
-)}
+          <div className="relative w-[90vw] h-[90vh] max-w-4xl overflow-hidden">
+            <div
+              key={selectedIndex}
+              className="absolute inset-0 animate-slide-in transition-all duration-300"
+            >
+              <Image
+                src={galleryImages[selectedIndex]}
+                alt="Full screen"
+                fill
+                className="object-contain rounded-xl"
+              />
+            </div>
 
-{/* Right Arrow */}
-{selectedIndex < galleryImages.length - 1 && (
-  <button
-    onClick={showNext}
-    className="absolute top-1/2 right-4 -translate-y-1/2 bg-white text-black rounded-full w-12 h-12 flex items-center justify-center text-2xl font-bold shadow-lg hover:bg-gray-200 transition"
-  >
-    ›
-  </button>
-)}
+            {/* Navigation Arrows */}
+            {selectedIndex > 0 && (
+              <button
+                onClick={showPrev}
+                className="absolute top-1/2 left-4 -translate-y-1/2 bg-white text-black rounded-full w-12 h-12 flex items-center justify-center text-2xl font-bold shadow-lg hover:bg-gray-200 transition"
+              >
+                ‹
+              </button>
+            )}
+            {selectedIndex < galleryImages.length - 1 && (
+              <button
+                onClick={showNext}
+                className="absolute top-1/2 right-4 -translate-y-1/2 bg-white text-black rounded-full w-12 h-12 flex items-center justify-center text-2xl font-bold shadow-lg hover:bg-gray-200 transition"
+              >
+                ›
+              </button>
+            )}
           </div>
         </div>
       )}
 
-      {/* Gallery Grid */}
+      {/* Image Grid */}
       <div className="w-[90%] mx-auto py-30 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {galleryImages.map((img, index) => (
           <div
@@ -113,7 +116,7 @@ export default function GalleryPage() {
               src={img}
               fill
               alt={`Gallery image ${index + 1}`}
-              className="object-cover hover:scale-105 border-2 border-[#008000] transition-transform duration-500"
+              className="object-cover hover:scale-105 transition-transform duration-500"
               sizes="(max-width: 640px) 100vw,
                      (max-width: 768px) 50vw,
                      (max-width: 1024px) 33vw,
