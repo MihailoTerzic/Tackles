@@ -6,7 +6,7 @@ export default function StatsSection() {
   <div className="w-[80%] mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
     {/* Left Side: Text */}
     <div>
-      <h2 className="text-3xl md:text-4xl font-bold mb-4">One Stop Handyman Service</h2>
+      <h2 className="text-3xl md:text-4xl font-bold mb-4">One Stop Handyman Service in Dubai</h2>
       <p className="text-base text-xl text-white/90">
         Tackles can be your one stop shop for all things related to residential remodeling, installation and repairs.
       </p>
