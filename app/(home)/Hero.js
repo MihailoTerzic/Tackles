@@ -47,9 +47,9 @@ export default function Hero() {
 
         {/* Links */}
         <div className="flex gap-6  font-medium pt-4 text-xl">
-          <Link href="#">Articles</Link>
+          <Link href="/team">Team</Link>
           <span className="hidden sm:inline">-</span>
-          <Link href="#">Hometips</Link>
+          <Link href="/FAQ">FAQ</Link>
           <span className="hidden sm:inline">-</span>
           <Link href="#">All Categories</Link>
         </div>
