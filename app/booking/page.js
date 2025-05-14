@@ -16,31 +16,31 @@ export default function BookAppointment() {
             <div className="flex flex-col gap-6 gap-y-10">
               <input 
                 type="text" 
-                placeholder="Full Name*" 
+                placeholder="Full Name " 
                 className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#008000]"
               />
 
               <input 
                 type="email" 
-                placeholder="Email*" 
+                placeholder="Email " 
                 className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#008000]"
               />
 
               <input 
                 type="date" 
-                placeholder="Preferred Date*" 
+                placeholder="Preferred Date " 
                 className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#008000] text-gray-400"
               />
 
               <input 
                 type="text" 
-                placeholder="Budget*" 
+                placeholder="Budget " 
                 className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#008000]"
               />
 
               <input 
                 type="text" 
-                placeholder="Location*" 
+                placeholder="Location " 
                 className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#008000]"
               />
             </div>
@@ -49,31 +49,31 @@ export default function BookAppointment() {
             <div className="flex flex-col gap-6 gap-y-10 justify-between">
               <input 
                 type="tel" 
-                placeholder="Phone Number*" 
+                placeholder="Phone Number " 
                 className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#008000]"
               />
 
               <select className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#008000]">
-                <option value="">Select a service*</option>
+                <option value="">Select a service </option>
                 <option value="Cleaning">Cleaning</option>
                 <option value="Maintenance">Maintenance</option>
                 {/* Add actual services here */}
               </select>
 
               <select className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#008000]">
-                <option value="">Shifts*</option>
+                <option value="">Shifts </option>
                 <option value="Morning">Morning</option>
                 <option value="Evening">Evening</option>
               </select>
 
               <select className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#008000]">
-                <option value="">Priority*</option>
+                <option value="">Priority </option>
                 <option value="Urgent">Urgent</option>
                 <option value="Standard">Standard</option>
               </select>
 
               <select className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#008000]">
-                <option value="">Emirates*</option>
+                <option value="">Emirates </option>
                 <option value="Dubai">Dubai</option>
                 <option value="Abu Dhabi">Abu Dhabi</option>
                 {/* Add more emirates as needed */}
