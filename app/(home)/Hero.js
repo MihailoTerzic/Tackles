@@ -30,7 +30,7 @@ export default function Hero() {
         </h2>
 
         {/* Search form */}
-        <form className="w-full max-w-3xl flex flex-col sm:flex-row items-center gap-4 ">
+        <form className="w-full max-w-3xl flex flex-col sm:flex-row items-center justify-center gap-4 ">
         <input
   type="text"
   placeholder="What service do you need? Plumbing, Wall Paper fixing, Plaster, Painting..."
