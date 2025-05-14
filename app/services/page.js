@@ -3,7 +3,7 @@ import Image from 'next/image'
 import React from 'react'
 const Card = ({ img, name, text }) => {
   return (
-    <div className='border border-[#008000] p-5 flex flex-col items-start justify-around h-[70vh]  mx-auto'>
+    <div className='border border-[#008000] p-5 flex flex-col items-start justify-around   mx-auto'>
       <div className='bg-[#F2FFF2] w-full h-[60%] flex items-center justify-center'>
         <Image src={img} alt={name} width={300} height={300} />
       </div>
