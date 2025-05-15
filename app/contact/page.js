@@ -30,7 +30,7 @@ export default function ContactPage() {
 
         <div className="max-w-7xl mx-auto flex flex-col  lg:flex-row gap-16 justify-between items-center">
           {/* Info Block */}
-          <div className="space-y-10 w-full lg:w-1/2 bg-gray-200 p-5 rounded-2xl">
+          <div className="space-y-10 w-full lg:w-1/2 bg-gray-100 p-5 rounded-2xl">
             <div>
               <p className="text-[#008000] font-semibold mb-2">Get In Touch</p>
               <h2 className="text-3xl font-bold">Get Closer Now</h2>
@@ -77,7 +77,7 @@ export default function ContactPage() {
           </div>
 
           {/* Contact Form */}
-          <form className="w-full lg:w-1/2 max-w-lg bg-gray-50 p-8 rounded-lg shadow-md space-y-6 mt-10 lg:mt-0">
+          <form className="w-full lg:w-1/2 max-w-lg  p-5  space-y-6 mt-10 lg:mt-0">
             <div className="space-y-1">
               <p className="text-[#008000] font-semibold">Send us a message</p>
               <h3 className="text-2xl font-bold">Whenever you need us, we’re here for you.</h3>
