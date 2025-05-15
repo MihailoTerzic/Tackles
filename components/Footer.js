@@ -47,7 +47,7 @@ export default function Footer({ image }) {
           </div>
 
           {/* Column 2 */}
-          <div className='text-center mx-auto'>
+          <div className='md:text-center md:mx-auto'>
             <h3 className="font-bold text-lg mb-2">Browse More</h3>
             <ul className="space-y-1 text-start">
               <li><Link href="/booking">Booking</Link></li>
@@ -60,7 +60,7 @@ export default function Footer({ image }) {
           </div>
 
           {/* Column 3 */}
-          <div className=' mx-auto'>
+          <div className=' md:mx-auto'>
             <h3 className="font-bold text-lg mb-2">Services</h3>
             <ul className="space-y-1 text-start">
               <li>Air Conditioning</li>

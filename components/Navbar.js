@@ -91,7 +91,7 @@ export default function Navbar() {
     <button
       className="w-48 mx-auto bg-[#008000] hover:bg-green-700 text-white rounded-lg font-semibold py-2 text-lg"
     >
-      Reach Us
+      Book Now
     </button>
   </div>
 )}
