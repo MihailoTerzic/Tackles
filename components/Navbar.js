@@ -17,7 +17,7 @@ export default function Navbar() {
   }, [])
 
   const navClasses = isTop
-    ? 'text-white bg-transparent'
+    ? 'text-white backdrop-blur-sm '
     : 'bg-white text-black shadow-md'
 
   const linkClasses = `transition-all duration-300 transform hover:scale-110 ${
