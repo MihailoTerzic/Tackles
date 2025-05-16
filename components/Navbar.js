@@ -72,7 +72,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
     {isOpen && (
-  <div className="md:hidden px-4 pt-2 space-y-2 text-center">
+  <div className="md:hidden py-4  pt-2 space-y-2 text-center backdrop-blur-sm">
     <Link href="/" className={`${linkClasses} block`} onClick={() => setIsOpen(false)}>
       Home
     </Link>
