@@ -26,18 +26,18 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 px-4 py-6  border-0 transition-all duration-300 ${navClasses}`}
+      className={`fixed top-0 left-0 w-full z-50  py-6  border-0 transition-all duration-300 ${navClasses}`}
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <Link
           href="/"
-          className={`text-xl font-bold ${isTop ? 'text-white' : 'text-black'}`}
+          className={`text-xl pl-5 font-bold ${isTop ? 'text-white' : 'text-black'}`}
         >
           Tackles
         </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center space-x-6">
+        <div className="hidden md:flex items-center space-x-6 pr-5">
           <Link href="/" className={linkClasses}>
             Home
           </Link>
@@ -64,7 +64,7 @@ export default function Navbar() {
         {/* Mobile Menu Toggle */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className={`md:hidden focus:outline-none ${isTop ? 'text-white' : 'text-black'}`}
+          className={` pr-5 md:hidden focus:outline-none ${isTop ? 'text-white' : 'text-black'}`}
         >
           ☰
         </button>
